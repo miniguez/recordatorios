@@ -1,0 +1,26 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Mensajes</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Respuesta</th>
+      <th>Date</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @mensajesTwilio.getmensajes.each do |message| %>
+      <tr>
+        <td><%= message.body %></td>
+        <td><%= message.date_created %></td>        
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Mensaje', new_mensaje_path %>

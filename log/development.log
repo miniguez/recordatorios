@@ -1,0 +1,875 @@
+
+
+Started GET "/" for ::1 at 2015-02-12 12:24:28 -0600
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /Library/Ruby/Gems/2.0.0/gems/railties-4.2.0/lib/rails/templates/rails/welcome/index.html.erb (1.7ms)
+Completed 200 OK in 56ms (Views: 24.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/rails/info/properties" for ::1 at 2015-02-12 12:24:30 -0600
+Processing by Rails::InfoController#properties as HTML
+  Rendered /Library/Ruby/Gems/2.0.0/gems/railties-4.2.0/lib/rails/templates/rails/info/properties.html.erb (0.5ms)
+Completed 200 OK in 76ms (Views: 13.3ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/" for ::1 at 2015-02-12 12:28:37 -0600
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 1901ms (Views: 1876.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/welcome-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-12 12:28:39 -0600
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-02-12 12:28:39 -0600
+
+
+Started GET "/assets/application-5266d2988799ecc8fe6e81eaab412e7d.css?body=1" for ::1 at 2015-02-12 12:28:39 -0600
+
+
+Started GET "/assets/welcome-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-12 12:28:39 -0600
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-02-12 12:28:39 -0600
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for ::1 at 2015-02-12 12:28:39 -0600
+
+
+Started GET "/assets/application-79e1233a68e5fdd328d8a2ea17ddef8a.js?body=1" for ::1 at 2015-02-12 12:28:39 -0600
+  [1m[36m (1.6ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL) [0m
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (1.3ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Migrating to CreateMensajes (20150212183900)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.6ms)[0m  CREATE TABLE "mensajes" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "respuesta" varchar, "date" date, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20150212183900"]]
+  [1m[35m (1.6ms)[0m  commit transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+
+Started GET "/" for ::1 at 2015-02-12 12:47:40 -0600
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by MensajesController#index as HTML
+  [1m[35mMensaje Load (0.2ms)[0m  SELECT "mensajes".* FROM "mensajes"
+  Rendered mensajes/index.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 491ms (Views: 468.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/mensajes-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-12 12:47:41 -0600
+
+
+Started GET "/assets/scaffolds-8a24946a94f2174ab5d75701870f0aca.css?body=1" for ::1 at 2015-02-12 12:47:41 -0600
+
+
+Started GET "/assets/application-b020fc973abbedd1eed821df17db13db.css?body=1" for ::1 at 2015-02-12 12:47:41 -0600
+
+
+Started GET "/assets/application-322efd85de1e19784a5dc35312bc9882.js?body=1" for ::1 at 2015-02-12 12:47:41 -0600
+
+
+Started GET "/assets/mensajes-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-12 12:47:41 -0600
+
+
+Started GET "/mensajes/new" for ::1 at 2015-02-12 12:47:43 -0600
+Processing by MensajesController#new as HTML
+  Rendered mensajes/_form.html.erb (58.2ms)
+  Rendered mensajes/new.html.erb within layouts/application (63.9ms)
+Completed 200 OK in 215ms (Views: 207.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/mensajes" for ::1 at 2015-02-12 12:47:46 -0600
+Processing by MensajesController#index as HTML
+  [1m[36mMensaje Load (0.2ms)[0m  [1mSELECT "mensajes".* FROM "mensajes"[0m
+  Rendered mensajes/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 78ms (Views: 77.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/mensajes" for ::1 at 2015-02-12 13:28:24 -0600
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by MensajesController#index as HTML
+  [1m[35mMensaje Load (11.7ms)[0m  SELECT "mensajes".* FROM "mensajes"
+  Rendered mensajes/index.html.erb within layouts/application (16.9ms)
+Completed 200 OK in 468ms (Views: 416.7ms | ActiveRecord: 12.0ms)
+
+
+Started GET "/mensajes/new" for ::1 at 2015-02-12 13:28:31 -0600
+Processing by MensajesController#new as HTML
+  Rendered mensajes/_form.html.erb (39.0ms)
+  Rendered mensajes/new.html.erb within layouts/application (54.2ms)
+Completed 500 Internal Server Error in 91ms
+
+ActionView::Template::Error (wrong number of arguments (1 for 0)):
+    13: 
+    14:   <div class="field">
+    15:     <%= f.label :respuesta %><br>
+    16:     <%= f.text_field :respuesta %>
+    17:   </div>
+    18:   <div class="field">
+    19:     <%= f.label :date %><br>
+  app/models/mensaje.rb:5:in `send'
+  app/views/mensajes/_form.html.erb:16:in `block in _app_views_mensajes__form_html_erb___517334649028606614_70200288403380'
+  app/views/mensajes/_form.html.erb:1:in `_app_views_mensajes__form_html_erb___517334649028606614_70200288403380'
+  app/views/mensajes/new.html.erb:3:in `_app_views_mensajes_new_html_erb___4126459180158896467_70200250443980'
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_source.erb (11.4ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (3.7ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (0.9ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/template_error.html.erb within rescues/layout (43.2ms)
+
+
+Started GET "/mensajes/new" for ::1 at 2015-02-12 13:28:32 -0600
+Processing by MensajesController#new as HTML
+  Rendered mensajes/_form.html.erb (4.3ms)
+  Rendered mensajes/new.html.erb within layouts/application (6.8ms)
+Completed 500 Internal Server Error in 14ms
+
+ActionView::Template::Error (wrong number of arguments (1 for 0)):
+    13: 
+    14:   <div class="field">
+    15:     <%= f.label :respuesta %><br>
+    16:     <%= f.text_field :respuesta %>
+    17:   </div>
+    18:   <div class="field">
+    19:     <%= f.label :date %><br>
+  app/models/mensaje.rb:5:in `send'
+  app/views/mensajes/_form.html.erb:16:in `block in _app_views_mensajes__form_html_erb___517334649028606614_70200282189360'
+  app/views/mensajes/_form.html.erb:1:in `_app_views_mensajes__form_html_erb___517334649028606614_70200282189360'
+  app/views/mensajes/new.html.erb:3:in `_app_views_mensajes_new_html_erb___4126459180158896467_70200282156340'
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_source.erb (12.2ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (3.8ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (1.4ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/template_error.html.erb within rescues/layout (38.5ms)
+
+
+Started GET "/mensajes/new" for ::1 at 2015-02-12 13:30:35 -0600
+Processing by MensajesController#new as HTML
+  Rendered mensajes/_form.html.erb (5.3ms)
+  Rendered mensajes/new.html.erb within layouts/application (7.6ms)
+Completed 500 Internal Server Error in 21ms
+
+ActionView::Template::Error (wrong number of arguments (1 for 0)):
+    13: 
+    14:   <div class="field">
+    15:     <%= f.label :respuesta %><br>
+    16:     <%= f.text_field :respuesta %>
+    17:   </div>
+    18:   <div class="field">
+    19:     <%= f.label :date %><br>
+  app/models/mensaje.rb:5:in `send'
+  app/views/mensajes/_form.html.erb:16:in `block in _app_views_mensajes__form_html_erb___517334649028606614_70200288403380'
+  app/views/mensajes/_form.html.erb:1:in `_app_views_mensajes__form_html_erb___517334649028606614_70200288403380'
+  app/views/mensajes/new.html.erb:3:in `_app_views_mensajes_new_html_erb___4126459180158896467_70200250443980'
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_source.erb (13.7ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (3.8ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (0.8ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/template_error.html.erb within rescues/layout (35.4ms)
+
+
+Started GET "/mensajes/new" for ::1 at 2015-02-12 13:30:36 -0600
+Processing by MensajesController#new as HTML
+  Rendered mensajes/_form.html.erb (3.6ms)
+  Rendered mensajes/new.html.erb within layouts/application (4.7ms)
+Completed 500 Internal Server Error in 8ms
+
+ActionView::Template::Error (wrong number of arguments (1 for 0)):
+    13: 
+    14:   <div class="field">
+    15:     <%= f.label :respuesta %><br>
+    16:     <%= f.text_field :respuesta %>
+    17:   </div>
+    18:   <div class="field">
+    19:     <%= f.label :date %><br>
+  app/models/mensaje.rb:5:in `send'
+  app/views/mensajes/_form.html.erb:16:in `block in _app_views_mensajes__form_html_erb___517334649028606614_70200282189360'
+  app/views/mensajes/_form.html.erb:1:in `_app_views_mensajes__form_html_erb___517334649028606614_70200282189360'
+  app/views/mensajes/new.html.erb:3:in `_app_views_mensajes_new_html_erb___4126459180158896467_70200282156340'
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_source.erb (11.0ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (3.7ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (72.4ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/template_error.html.erb within rescues/layout (105.5ms)
+
+
+Started GET "/mensajes" for ::1 at 2015-02-12 13:31:39 -0600
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by MensajesController#index as HTML
+  [1m[35mMensaje Load (0.3ms)[0m  SELECT "mensajes".* FROM "mensajes"
+  Rendered mensajes/index.html.erb within layouts/application (5.2ms)
+Completed 200 OK in 278ms (Views: 252.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/mensajes/new" for ::1 at 2015-02-12 13:31:41 -0600
+Processing by MensajesController#new as HTML
+  Rendered mensajes/_form.html.erb (18.7ms)
+  Rendered mensajes/new.html.erb within layouts/application (23.4ms)
+Completed 500 Internal Server Error in 33ms
+
+ActionView::Template::Error (wrong number of arguments (1 for 0)):
+    13: 
+    14:   <div class="field">
+    15:     <%= f.label :respuesta %><br>
+    16:     <%= f.text_field :respuesta %>
+    17:   </div>
+    18:   <div class="field">
+    19:     <%= f.label :date %><br>
+  app/models/mensaje.rb:4:in `send'
+  app/views/mensajes/_form.html.erb:16:in `block in _app_views_mensajes__form_html_erb___4040008437232584736_70316084584680'
+  app/views/mensajes/_form.html.erb:1:in `_app_views_mensajes__form_html_erb___4040008437232584736_70316084584680'
+  app/views/mensajes/new.html.erb:3:in `_app_views_mensajes_new_html_erb___926042409094628954_70316084407300'
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_source.erb (12.4ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (4.6ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (0.9ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/template_error.html.erb within rescues/layout (36.3ms)
+
+
+Started GET "/mensajes/new" for ::1 at 2015-02-12 13:31:42 -0600
+Processing by MensajesController#new as HTML
+  Rendered mensajes/_form.html.erb (5.0ms)
+  Rendered mensajes/new.html.erb within layouts/application (7.4ms)
+Completed 500 Internal Server Error in 13ms
+
+ActionView::Template::Error (wrong number of arguments (1 for 0)):
+    13: 
+    14:   <div class="field">
+    15:     <%= f.label :respuesta %><br>
+    16:     <%= f.text_field :respuesta %>
+    17:   </div>
+    18:   <div class="field">
+    19:     <%= f.label :date %><br>
+  app/models/mensaje.rb:4:in `send'
+  app/views/mensajes/_form.html.erb:16:in `block in _app_views_mensajes__form_html_erb___4040008437232584736_70316118833200'
+  app/views/mensajes/_form.html.erb:1:in `_app_views_mensajes__form_html_erb___4040008437232584736_70316118833200'
+  app/views/mensajes/new.html.erb:3:in `_app_views_mensajes_new_html_erb___926042409094628954_70316118800180'
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_source.erb (14.5ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (4.0ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (0.9ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/template_error.html.erb within rescues/layout (37.2ms)
+
+
+Started GET "/mensajes/new" for ::1 at 2015-02-12 13:33:06 -0600
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by MensajesController#new as HTML
+  Rendered mensajes/_form.html.erb (78.9ms)
+  Rendered mensajes/new.html.erb within layouts/application (83.4ms)
+Completed 500 Internal Server Error in 124ms
+
+ActionView::Template::Error (wrong number of arguments (1 for 0)):
+    13: 
+    14:   <div class="field">
+    15:     <%= f.label :respuesta %><br>
+    16:     <%= f.text_field :respuesta %>
+    17:   </div>
+    18:   <div class="field">
+    19:     <%= f.label :date %><br>
+  app/models/mensaje.rb:4:in `send'
+  app/views/mensajes/_form.html.erb:16:in `block in _app_views_mensajes__form_html_erb__1785091306003864685_70229782315960'
+  app/views/mensajes/_form.html.erb:1:in `_app_views_mensajes__form_html_erb__1785091306003864685_70229782315960'
+  app/views/mensajes/new.html.erb:3:in `_app_views_mensajes_new_html_erb___4411051716481222812_70229782169740'
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_source.erb (12.5ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (5.6ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (1.6ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/template_error.html.erb within rescues/layout (109.0ms)
+
+
+Started GET "/mensajes/new" for ::1 at 2015-02-12 13:33:08 -0600
+Processing by MensajesController#new as HTML
+  Rendered mensajes/_form.html.erb (6.7ms)
+  Rendered mensajes/new.html.erb within layouts/application (10.0ms)
+Completed 500 Internal Server Error in 15ms
+
+ActionView::Template::Error (wrong number of arguments (1 for 0)):
+    13: 
+    14:   <div class="field">
+    15:     <%= f.label :respuesta %><br>
+    16:     <%= f.text_field :respuesta %>
+    17:   </div>
+    18:   <div class="field">
+    19:     <%= f.label :date %><br>
+  app/models/mensaje.rb:4:in `send'
+  app/views/mensajes/_form.html.erb:16:in `block in _app_views_mensajes__form_html_erb__1785091306003864685_70229781828520'
+  app/views/mensajes/_form.html.erb:1:in `_app_views_mensajes__form_html_erb__1785091306003864685_70229781828520'
+  app/views/mensajes/new.html.erb:3:in `_app_views_mensajes_new_html_erb___4411051716481222812_70229781748920'
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_source.erb (82.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (6.2ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (1.4ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/template_error.html.erb within rescues/layout (110.8ms)
+
+
+Started GET "/mensajes/new" for ::1 at 2015-02-12 13:34:05 -0600
+Processing by MensajesController#new as HTML
+  Rendered mensajes/_form.html.erb (3.8ms)
+  Rendered mensajes/new.html.erb within layouts/application (5.6ms)
+Completed 500 Internal Server Error in 24ms
+
+ActionView::Template::Error (wrong number of arguments (1 for 0)):
+    13: 
+    14:   <div class="field">
+    15:     <%= f.label :respuesta %><br>
+    16:     <%= f.text_field :respuesta %>
+    17:   </div>
+    18:   <div class="field">
+    19:     <%= f.label :date %><br>
+  app/models/mensaje.rb:4:in `send'
+  app/views/mensajes/_form.html.erb:16:in `block in _app_views_mensajes__form_html_erb__1785091306003864685_70229782315960'
+  app/views/mensajes/_form.html.erb:1:in `_app_views_mensajes__form_html_erb__1785091306003864685_70229782315960'
+  app/views/mensajes/new.html.erb:3:in `_app_views_mensajes_new_html_erb___4411051716481222812_70229782169740'
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_source.erb (13.1ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (3.9ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (1.0ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/template_error.html.erb within rescues/layout (39.1ms)
+
+
+Started GET "/mensajes/new" for ::1 at 2015-02-12 13:34:06 -0600
+Processing by MensajesController#new as HTML
+  Rendered mensajes/_form.html.erb (3.6ms)
+  Rendered mensajes/new.html.erb within layouts/application (5.9ms)
+Completed 500 Internal Server Error in 14ms
+
+ActionView::Template::Error (wrong number of arguments (1 for 0)):
+    13: 
+    14:   <div class="field">
+    15:     <%= f.label :respuesta %><br>
+    16:     <%= f.text_field :respuesta %>
+    17:   </div>
+    18:   <div class="field">
+    19:     <%= f.label :date %><br>
+  app/models/mensaje.rb:4:in `send'
+  app/views/mensajes/_form.html.erb:16:in `block in _app_views_mensajes__form_html_erb__1785091306003864685_70229781828520'
+  app/views/mensajes/_form.html.erb:1:in `_app_views_mensajes__form_html_erb__1785091306003864685_70229781828520'
+  app/views/mensajes/new.html.erb:3:in `_app_views_mensajes_new_html_erb___4411051716481222812_70229781748920'
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_source.erb (13.7ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (5.2ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (1.0ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/template_error.html.erb within rescues/layout (40.0ms)
+
+
+Started GET "/mensajes/new" for ::1 at 2015-02-12 13:34:42 -0600
+Processing by MensajesController#new as HTML
+  Rendered mensajes/_form.html.erb (31.7ms)
+  Rendered mensajes/new.html.erb within layouts/application (33.3ms)
+Completed 200 OK in 324ms (Views: 314.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/mensajes" for ::1 at 2015-02-12 13:41:13 -0600
+Processing by MensajesController#index as HTML
+Completed 500 Internal Server Error in 572ms
+
+Twilio::REST::RequestError (Authenticate):
+  app/controllers/mensajes_controller.rb:17:in `index'
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_source.erb (8.4ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (2.6ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (1.0ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/diagnostics.html.erb within rescues/layout (35.1ms)
+
+
+Started GET "/mensajes" for ::1 at 2015-02-12 13:41:14 -0600
+Processing by MensajesController#index as HTML
+Completed 500 Internal Server Error in 507ms
+
+Twilio::REST::RequestError (Authenticate):
+  app/controllers/mensajes_controller.rb:17:in `index'
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_source.erb (7.8ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (3.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (0.8ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/diagnostics.html.erb within rescues/layout (29.2ms)
+
+
+Started GET "/mensajes" for ::1 at 2015-02-12 13:45:48 -0600
+Processing by MensajesController#index as HTML
+Completed 500 Internal Server Error in 613ms
+
+Twilio::REST::RequestError (Authenticate):
+  app/controllers/mensajes_controller.rb:17:in `index'
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_source.erb (9.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (3.2ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (0.8ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/diagnostics.html.erb within rescues/layout (35.5ms)
+
+
+Started GET "/mensajes" for ::1 at 2015-02-12 13:47:10 -0600
+Processing by MensajesController#index as HTML
+Completed 500 Internal Server Error in 511ms
+
+Twilio::REST::RequestError (Authenticate):
+  app/controllers/mensajes_controller.rb:17:in `index'
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_source.erb (7.7ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (2.6ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (74.9ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/diagnostics.html.erb within rescues/layout (105.8ms)
+
+
+Started GET "/mensajes" for ::1 at 2015-02-12 13:48:04 -0600
+Processing by MensajesController#index as HTML
+Completed 500 Internal Server Error in 681ms
+
+Twilio::REST::RequestError (Authenticate):
+  app/controllers/mensajes_controller.rb:17:in `index'
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_source.erb (7.7ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (4.6ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (1.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/diagnostics.html.erb within rescues/layout (35.8ms)
+
+
+Started GET "/mensajes" for ::1 at 2015-02-12 13:48:26 -0600
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by MensajesController#index as HTML
+Completed 500 Internal Server Error in 533ms
+
+Twilio::REST::RequestError (Authenticate):
+  app/controllers/mensajes_controller.rb:17:in `index'
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_source.erb (9.5ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (2.7ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (1.0ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/diagnostics.html.erb within rescues/layout (36.1ms)
+
+
+Started GET "/mensajes" for ::1 at 2015-02-12 13:51:09 -0600
+Processing by MensajesController#index as HTML
+Completed 500 Internal Server Error in 516ms
+
+Twilio::REST::RequestError (Authenticate):
+  app/controllers/mensajes_controller.rb:17:in `index'
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_source.erb (75.0ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (3.0ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (1.4ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/diagnostics.html.erb within rescues/layout (98.3ms)
+
+
+Started GET "/mensajes" for ::1 at 2015-02-12 13:52:52 -0600
+Processing by MensajesController#index as HTML
+  [1m[35mMensaje Load (0.6ms)[0m  SELECT "mensajes".* FROM "mensajes"
+  Rendered mensajes/index.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 521ms (Views: 516.1ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/mensajes" for ::1 at 2015-02-12 13:53:31 -0600
+Processing by MensajesController#index as HTML
+Completed 500 Internal Server Error in 76ms
+
+TypeError (no implicit conversion of Twilio::REST::Client into String):
+  app/controllers/mensajes_controller.rb:17:in `+'
+  app/controllers/mensajes_controller.rb:17:in `index'
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_source.erb (8.2ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (3.0ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (0.9ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/diagnostics.html.erb within rescues/layout (30.8ms)
+
+
+Started GET "/mensajes" for ::1 at 2015-02-12 13:53:46 -0600
+Processing by MensajesController#index as HTML
+  [1m[36mMensaje Load (0.7ms)[0m  [1mSELECT "mensajes".* FROM "mensajes"[0m
+  Rendered mensajes/index.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 157ms (Views: 150.9ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/mensajes" for ::1 at 2015-02-12 13:54:38 -0600
+Processing by MensajesController#index as HTML
+Completed 500 Internal Server Error in 465ms
+
+Twilio::REST::RequestError (Authenticate):
+  app/controllers/mensajes_controller.rb:18:in `index'
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_source.erb (11.5ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (2.6ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (0.8ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/diagnostics.html.erb within rescues/layout (33.2ms)
+
+
+Started GET "/mensajes" for ::1 at 2015-02-12 13:55:35 -0600
+Processing by MensajesController#index as HTML
+Completed 500 Internal Server Error in 411ms
+
+Twilio::REST::RequestError (Authenticate):
+  app/controllers/mensajes_controller.rb:18:in `index'
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_source.erb (7.5ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (2.9ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (1.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/diagnostics.html.erb within rescues/layout (32.2ms)
+
+
+Started GET "/mensajes" for ::1 at 2015-02-12 14:38:03 -0600
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by MensajesController#index as HTML
+Completed 500 Internal Server Error in 42ms
+
+NoMethodError (undefined method `getMessage' for #<Class:0x007f948520e5b0>):
+  app/controllers/mensajes_controller.rb:9:in `index'
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_source.erb (78.7ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (3.2ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (1.7ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (1.0ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/diagnostics.html.erb within rescues/layout (111.9ms)
+
+
+Started GET "/mensajes" for ::1 at 2015-02-12 14:38:51 -0600
+Processing by MensajesController#index as HTML
+Completed 500 Internal Server Error in 4ms
+
+NoMethodError (undefined method `getMessage' for #<Class:0x007f948526c160>):
+  app/controllers/mensajes_controller.rb:9:in `index'
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_source.erb (8.7ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (3.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (1.0ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/diagnostics.html.erb within rescues/layout (32.4ms)
+
+
+Started GET "/mensajes" for ::1 at 2015-02-12 14:39:43 -0600
+Processing by MensajesController#index as HTML
+Completed 500 Internal Server Error in 4ms
+
+NoMethodError (undefined method `getmensajes' for #<Class:0x007f94835e8ac0>):
+  app/controllers/mensajes_controller.rb:9:in `index'
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_source.erb (7.2ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (2.7ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (1.7ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/diagnostics.html.erb within rescues/layout (31.9ms)
+
+
+Started GET "/mensajes" for ::1 at 2015-02-12 14:40:00 -0600
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by MensajesController#index as HTML
+Completed 500 Internal Server Error in 26ms
+
+NoMethodError (undefined method `getmensajes' for #<Class:0x007f9fb4bee4d8>):
+  app/controllers/mensajes_controller.rb:9:in `index'
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_source.erb (75.6ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (3.2ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (0.9ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/diagnostics.html.erb within rescues/layout (100.1ms)
+
+
+Started GET "/mensajes" for ::1 at 2015-02-12 14:40:53 -0600
+Processing by MensajesController#index as HTML
+Completed 500 Internal Server Error in 4ms
+
+NoMethodError (undefined method `getmensajes' for #<Class:0x007f9fb5923bf8>):
+  app/controllers/mensajes_controller.rb:9:in `index'
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_source.erb (7.9ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (2.8ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (1.1ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/diagnostics.html.erb within rescues/layout (32.2ms)
+
+
+Started GET "/mensajes" for ::1 at 2015-02-12 14:42:07 -0600
+Processing by MensajesController#index as HTML
+Completed 500 Internal Server Error in 5ms
+
+NoMethodError (undefined method `getmensajes' for #<Class:0x007f9fb246deb8>):
+  app/controllers/mensajes_controller.rb:9:in `index'
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_source.erb (7.1ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (3.1ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (1.2ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/diagnostics.html.erb within rescues/layout (30.2ms)
+
+
+Started GET "/mensajes" for ::1 at 2015-02-12 14:44:36 -0600
+Processing by MensajesController#index as HTML
+  [1m[35mMensaje Load (19.5ms)[0m  SELECT "mensajes".* FROM "mensajes"
+Completed 500 Internal Server Error in 33ms
+
+NameError (undefined local variable or method `mensajesTwilio' for #<MensajesController:0x007f9fb1300a90>):
+  app/controllers/mensajes_controller.rb:10:in `index'
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_source.erb (7.7ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (2.8ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (0.9ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/diagnostics.html.erb within rescues/layout (34.0ms)
+
+
+Started GET "/mensajes" for ::1 at 2015-02-12 14:44:46 -0600
+Processing by MensajesController#index as HTML
+  [1m[36mMensaje Load (0.3ms)[0m  [1mSELECT "mensajes".* FROM "mensajes"[0m
+  Rendered mensajes/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 1004ms (Views: 407.8ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/mensajes" for ::1 at 2015-02-12 14:45:42 -0600
+Processing by MensajesController#index as HTML
+  [1m[35mMensaje Load (0.2ms)[0m  SELECT "mensajes".* FROM "mensajes"
+  Rendered mensajes/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 511ms (Views: 69.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/mensajes" for ::1 at 2015-02-12 14:46:13 -0600
+Processing by MensajesController#index as HTML
+  [1m[36mMensaje Load (0.2ms)[0m  [1mSELECT "mensajes".* FROM "mensajes"[0m
+  Rendered mensajes/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 998ms (Views: 68.4ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/mensajes" for ::1 at 2015-02-12 14:47:14 -0600
+Processing by MensajesController#index as HTML
+  [1m[35mMensaje Load (0.3ms)[0m  SELECT "mensajes".* FROM "mensajes"
+  Rendered mensajes/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 1276ms (Views: 75.6ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/mensajes" for ::1 at 2015-02-12 14:48:24 -0600
+Processing by MensajesController#index as HTML
+  [1m[36mMensaje Load (0.2ms)[0m  [1mSELECT "mensajes".* FROM "mensajes"[0m
+  Rendered mensajes/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 675ms (Views: 157.0ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/mensajes" for ::1 at 2015-02-12 14:49:51 -0600
+Processing by MensajesController#index as HTML
+  [1m[35mMensaje Load (0.3ms)[0m  SELECT "mensajes".* FROM "mensajes"
+  Rendered mensajes/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 714ms (Views: 144.1ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/mensajes" for ::1 at 2015-02-12 14:54:20 -0600
+Processing by MensajesController#index as HTML
+  Rendered mensajes/index.html.erb within layouts/application (4.1ms)
+Completed 500 Internal Server Error in 486ms
+
+ActionView::Template::Error (undefined method `each' for #<Mensaje:0x007f9fb4e1dc40>):
+    12:   </thead>
+    13: 
+    14:   <tbody>
+    15:     <% @mensajesTwilio.each do |mensaje| %>
+    16:       <tr>
+    17:         <td><%= mensaje.body %></td>
+    18:         <td><%= mensaje.sid %></td>       
+  app/views/mensajes/index.html.erb:15:in `_app_views_mensajes_index_html_erb__1235528705729010978_70161955742300'
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_source.erb (9.7ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (3.2ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (1.1ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/template_error.html.erb within rescues/layout (40.0ms)
+
+
+Started GET "/mensajes" for ::1 at 2015-02-12 14:56:11 -0600
+Processing by MensajesController#index as HTML
+  Rendered mensajes/index.html.erb within layouts/application (5.4ms)
+Completed 500 Internal Server Error in 704ms
+
+ActionView::Template::Error (undefined method `each' for #<Mensaje:0x007f9fb5c5c388>):
+    12:   </thead>
+    13: 
+    14:   <tbody>
+    15:     <% @mensajesTwilio.each do |mensaje| %>
+    16:       <tr>
+    17:         <td><%= mensaje.respuesta %></td>
+    18:         <td><%= mensaje.date %></td>
+  app/views/mensajes/index.html.erb:15:in `_app_views_mensajes_index_html_erb__1235528705729010978_70161924289260'
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_source.erb (82.0ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (3.8ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (0.9ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/template_error.html.erb within rescues/layout (103.2ms)
+
+
+Started GET "/mensajes" for ::1 at 2015-02-12 14:56:30 -0600
+Processing by MensajesController#index as HTML
+  Rendered mensajes/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 523ms (Views: 75.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/mensajes" for ::1 at 2015-02-12 14:56:52 -0600
+Processing by MensajesController#index as HTML
+  Rendered mensajes/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 737ms (Views: 69.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/mensajes" for ::1 at 2015-02-12 14:57:25 -0600
+Processing by MensajesController#index as HTML
+  Rendered mensajes/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 692ms (Views: 160.2ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/mensajes" for ::1 at 2015-02-12 14:59:47 -0600
+Processing by MensajesController#index as HTML
+  Rendered mensajes/index.html.erb within layouts/application (442.8ms)
+Completed 200 OK in 606ms (Views: 596.2ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/mensajes" for ::1 at 2015-02-12 15:03:00 -0600
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by MensajesController#index as HTML
+  Rendered mensajes/index.html.erb within layouts/application (521.3ms)
+Completed 200 OK in 912ms (Views: 874.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/mensajes-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-12 15:03:02 -0600
+
+
+Started GET "/assets/scaffolds-8a24946a94f2174ab5d75701870f0aca.css?body=1" for ::1 at 2015-02-12 15:03:02 -0600
+
+
+Started GET "/assets/welcome-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-12 15:03:02 -0600
+
+
+Started GET "/assets/application-b020fc973abbedd1eed821df17db13db.css?body=1" for ::1 at 2015-02-12 15:03:02 -0600
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-02-12 15:03:02 -0600
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-02-12 15:03:02 -0600
+
+
+Started GET "/assets/mensajes-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-12 15:03:02 -0600
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for ::1 at 2015-02-12 15:03:02 -0600
+
+
+Started GET "/assets/welcome-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-12 15:03:02 -0600
+
+
+Started GET "/assets/application-322efd85de1e19784a5dc35312bc9882.js?body=1" for ::1 at 2015-02-12 15:03:02 -0600
+
+
+Started GET "/mensajes" for ::1 at 2015-02-12 15:03:04 -0600
+Processing by MensajesController#index as HTML
+  Rendered mensajes/index.html.erb within layouts/application (3683.5ms)
+Completed 200 OK in 3826ms (Views: 3824.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/mensajes-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-12 15:03:08 -0600
+
+
+Started GET "/assets/scaffolds-8a24946a94f2174ab5d75701870f0aca.css?body=1" for ::1 at 2015-02-12 15:03:08 -0600
+
+
+Started GET "/assets/welcome-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-12 15:03:08 -0600
+
+
+Started GET "/assets/application-b020fc973abbedd1eed821df17db13db.css?body=1" for ::1 at 2015-02-12 15:03:08 -0600
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-02-12 15:03:08 -0600
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-02-12 15:03:08 -0600
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for ::1 at 2015-02-12 15:03:08 -0600
+
+
+Started GET "/assets/mensajes-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-12 15:03:08 -0600
+
+
+Started GET "/assets/welcome-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-12 15:03:08 -0600
+
+
+Started GET "/assets/application-322efd85de1e19784a5dc35312bc9882.js?body=1" for ::1 at 2015-02-12 15:03:08 -0600
+
+
+Started GET "/mensajes" for ::1 at 2015-02-12 15:06:56 -0600
+Processing by MensajesController#index as HTML
+  Rendered mensajes/index.html.erb within layouts/application (441.8ms)
+Completed 200 OK in 595ms (Views: 593.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/mensajes-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-12 15:06:57 -0600
+
+
+Started GET "/assets/scaffolds-8a24946a94f2174ab5d75701870f0aca.css?body=1" for ::1 at 2015-02-12 15:06:57 -0600
+
+
+Started GET "/assets/welcome-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-12 15:06:57 -0600
+
+
+Started GET "/assets/application-b020fc973abbedd1eed821df17db13db.css?body=1" for ::1 at 2015-02-12 15:06:57 -0600
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-02-12 15:06:57 -0600
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for ::1 at 2015-02-12 15:06:57 -0600
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-02-12 15:06:57 -0600
+
+
+Started GET "/assets/mensajes-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-12 15:06:57 -0600
+
+
+Started GET "/assets/application-322efd85de1e19784a5dc35312bc9882.js?body=1" for ::1 at 2015-02-12 15:06:57 -0600
+
+
+Started GET "/assets/welcome-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-12 15:06:57 -0600
