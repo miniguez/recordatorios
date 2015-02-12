@@ -1,2 +1,2 @@
 # recordatorios
-Aplicacion rails para conectar api twilio test update
+Aplicacion rails para conectar api twilio test
